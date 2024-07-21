@@ -14,7 +14,7 @@ export default class HolbertonClass {
     return this._size;
   }
 
-  set size(size) {  
+  set size(size) {
     this._size = size;
   }
 
