@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Module with an asynchronous coroutine that waits for multiple delays."""
 
+
 import asyncio
 import random
 from typing import List
-
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
