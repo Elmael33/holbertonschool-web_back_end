@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+
 """Module with function notation."""
 from typing import Callable, Iterator, Union, Optional, List
 

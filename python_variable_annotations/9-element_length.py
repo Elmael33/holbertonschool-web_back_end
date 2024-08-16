@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Module with a function that returns the length of elements in an iterable."""
+
+"""Module with a function that returns\
+    the length of elements in an iterable."""
 from typing import Mapping, MutableMapping, Sequence, Iterable, List, Tuple
 
 

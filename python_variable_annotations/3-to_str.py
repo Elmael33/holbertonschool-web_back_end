@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-""" annotations - to string  """
+"""Module with annotations - to string."""
+
 
 def to_str(n: float) -> str:
-    """ Returns the string representation of the float. """
+    """Returns the string representation of the float."""
     return str(n)
