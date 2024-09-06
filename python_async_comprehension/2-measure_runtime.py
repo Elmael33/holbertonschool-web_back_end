@@ -2,12 +2,12 @@
 """Module defines a coroutine that measures the runtime"""
 
 import asyncio
-import time
+from time import time
 
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-async def measure_runtime():
+async def measure_runtime() -> float:
     """Measure total runtime of executing\
         async_comprehension four times."""
     start = time.perf_counter()
