@@ -2,13 +2,13 @@
 """module measures the runtime"""
 
 import asyncio
-import time
+from time import time
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-async def measure_runtime():
+async def measure_runtime() -> float:
     """measure_runtime should measure\
         the total runtime and return it"""
-    start = time.perf_counter()
-    await asyncio.gather(*(async_comprehension() for _ in range(4)))
-    return time.perf_counter() - start
+    clock = time()
+    await asyncio.gather(*(async_comprehension() for x in range(4)))
+    return time() - clock
