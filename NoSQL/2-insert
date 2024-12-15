@@ -1,6 +1,2 @@
 // Insert a document into the collection "school" with the attribute "name"
-db.school.insertOne(
-    {
-        name: "Holberton school"
-    }
-)
+db.school.insertOne({name: "Holberton school"})
