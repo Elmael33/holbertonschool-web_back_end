@@ -1,0 +1,5 @@
+// Modify all documents with name "Holberton school" to include a new "address" field
+db.school.update(
+	{name: "Holberton school"},
+	{$set: {address: "972 Mission street"}}
+)
