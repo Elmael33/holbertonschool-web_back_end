@@ -1,4 +1,4 @@
-import { readDatabase } from '../utils.js';
+import { readDatabase } from '../utils';
 
 export default class StudentsController {
   static async getAllStudents(req, res) {
@@ -20,7 +20,8 @@ export default class StudentsController {
     const { major } = req.params;
 
     if (major !== 'CS' && major !== 'SWE') {
-      return res.status(500).send('Major parameter must be CS or SWE');
+      res.status(500).send('Major parameter must be CS or SWE');
+      return;
     }
 
     try {
@@ -28,6 +29,7 @@ export default class StudentsController {
       const students = studentsByField[major] || [];
 
       res.status(200).send(`List: ${students.join(', ')}`);
+      return;
     } catch (error) {
       res.status(500).send('Cannot load the database');
     }
