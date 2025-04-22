@@ -1,2 +1,0 @@
-// Insert a document into the collection "school" with the attribute "name"
-db.school.insert({name: "Holberton school"})

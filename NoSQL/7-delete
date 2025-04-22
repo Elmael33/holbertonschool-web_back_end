@@ -1,2 +1,0 @@
-// Remove all documents where the "name" is "Holberton school"
-db.school.deleteMany({ name: "Holberton school" })
