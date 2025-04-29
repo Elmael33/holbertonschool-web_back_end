@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """Module defines an async generator
     that yields random numbers after delays."""
-
 import asyncio
 import random
 from typing import AsyncGenerator
