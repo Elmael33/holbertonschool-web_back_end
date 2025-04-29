@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Module defines an async generator \
+"""Module defines an async generator
     that yields random numbers after delays."""
 
 import asyncio
@@ -8,8 +8,8 @@ from typing import AsyncGenerator
 
 
 async def async_generator() -> AsyncGenerator[float, None]:
-    """Asynchronously yield 10 random floats between 0 and 10,\
-          with a 1-second pause between each."""
+    """Asynchronously yield 10 random floats between 0 and 10,
+        with a 1-second pause between each."""
     for i in range(10):
         await asyncio.sleep(1)
         yield random.uniform(0, 10)
